@@ -25,6 +25,11 @@ assembly_info:
   assembly_file_version: '{version}'
   assembly_informational_version: '{version}'
 
+platform:
+  - x64
+configuration:
+  - Release
+
 before_build:
   - git submodule update --init --recursive --remote
   - nuget restore "Concept Matrix.sln"
